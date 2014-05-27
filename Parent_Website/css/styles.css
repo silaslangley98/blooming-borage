@@ -1,0 +1,844 @@
+body, h1, h2, h3, p, ul{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #ccc url(../images/Water-drops-in-air802.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+	float: left;
+	font-size: 50px;
+	margin: 10px 15px 0 15px;
+	background-color: #028482;
+	color: black;
+	font-family: Georgia, serif;
+}
+
+h2, h3, h4{
+	font-family: Georgia, serif;
+}
+
+/** Header **/
+
+header{
+	background-color: #028482;
+	height: 140px;
+	margin: 5px 0;
+	color: black;
+	border-radius: 5px;
+}
+
+	header #Logo{
+		background: url(../images/Spritesheet.png) no-repeat;
+		background-position: -111px -1px;
+		float: left;
+		height: 60px;
+		width: 62px;
+		border-radius: 5px;
+		display: block;
+		text-indent: -9999px;
+		margin: 10px 0 0 10px;	
+	}
+
+		header #Logo:hover{
+			border: 1px solid #7aba7a;
+			box-shadow: 5px 5px black;
+		}
+
+	header p{
+		font-size: 20px;
+		margin: 5px 15px 5px 110px;
+		color: black;
+	}
+	
+/** Navigation Bar **/
+
+nav{
+	position: relative;
+	text-align: center;
+}
+
+	nav li{
+		display: inline;
+		list-style: none;
+		font-size: 1.25em;
+		margin: 20px 0 5px 0;
+		padding: 0;
+		line-height: .5em;
+	}
+
+		nav li:hover ul{
+			animation: DropFade 0.5s;
+			-webkit-animation: DropFade 0.5s;
+		}
+
+	nav ul li ul li{
+		font-size: 1em;
+		display: block;
+		line-height: .5em;
+		padding: 7px 20px;
+		margin: 0;
+		text-align: left;
+		background-color: #028482;
+		top: 30px;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}
+	
+		nav ul li ul li:first-child{
+			border-radius: 5px 5px 0 0;
+			border-top: 1px solid black;
+		}
+
+		nav ul li ul li:last-child{
+			border-radius: 0 0 5px 5px;
+			border-bottom: 1px solid black;
+		}
+
+		nav ul li ul li a{
+			display: block;
+			text-align: left;
+			line-height: .5em;
+			padding: 2px 0px;
+			margin: 0;
+			text-decoration: none;
+		}
+
+			nav ul li ul li a:hover{
+				background-color: #028482;
+				text-decoration: underline;	
+			}
+
+	nav a{
+		color: black;
+		padding: 10px 20px;
+		margin-right: 1px;
+		display: inline-block;
+	}
+
+		nav a:hover{
+			background-color: #7aba7a;
+			color: #000;
+			border-radius: 5px;
+		}
+
+	nav #evs{
+		position: absolute;
+		left: -9999px;
+	}
+
+		nav li:hover #evs{
+			left: 109px;
+		}
+
+	nav #places{
+		position: absolute;
+		left: -9999px;
+	}
+
+		nav li:hover #places{
+			left: 215px;
+}
+
+	nav #resources{
+		position: absolute;
+		left: -9999px;
+	}
+
+		nav li:hover #resources{
+			left: 526px;
+		}
+
+/** Forms **/
+
+input{
+	border-radius: 5px;
+}
+
+/** Footer **/
+
+footer{
+	background-color: #028482;
+	min-height: 50px;
+	color: #ffffff;
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+/** Events Table **/
+
+table{
+	outline: 1px solid black;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	border-spacing: 10px;
+}
+
+thead{
+	background: #000;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+	thead tr td{
+		padding: 5px 10px;
+		text-align: center;
+		width: 14%;
+	}
+
+tbody tr td{
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+	text-align: left;
+}
+
+	tbody tr td:hover{
+		background-color: #7aba7a;
+	}
+
+	tbody a{
+		color: #000;
+	}
+
+/** CSS Animations **/
+
+@keyframes DropFade{
+	from{ opacity: 0; }
+	to{  opacity: 1; }
+}
+
+@-webkit-keyframes DropFade{
+	from{ opacity: 0; }
+	to{  opacity: 1; }
+}
+
+@keyframes categorySlideRight{
+	from{ left: -400px; }
+	to{ left: 0px; }
+}
+
+@-webkit-keyframes categorySlideRight{
+	from{ left: -400px; }
+	to{ left: 0px; }
+}
+
+@keyframes categorySlideLeft{
+	from{ left: 400px; }
+	to{ left: 0px; }
+}
+
+@-webkit-keyframes categorySlideLeft{
+	from{ left: 400px; }
+	to{ left: 0px; }
+}
+
+@keyframes categoryDrop{
+	from{ top: -400px; }
+	to{ top: 0px; }
+}
+
+@-webkit-keyframes categoryDrop{
+	from{ top: -400px; }
+	to{ top: 0px; }
+}
+
+/** Index IDs **/
+
+#Container{
+	background-color: #f0f0f0;
+	width: 960px;
+	margin: 20px auto 0;
+	border-radius: 5px;
+}
+
+#evs, #places, #resources{
+	z-index: 1000;
+}
+
+#mainImage{
+	float: left;
+	margin: 5px;
+}
+
+	#mainImage img{
+		height: 250px;
+		width: 690px;
+		border-radius: 5px;
+	}
+
+#sidebar{
+	float: right;
+	background-color: #7aba7a;
+	width: 250px;
+	min-height: 383px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+	#sidebar ul li{
+		margin: 10px 0 0 30px;
+	}
+
+#spotlight{
+	background-color: #7aba7a;
+	float: left;
+	width: 200px;
+	min-height: 300px;
+	margin: 5px;
+	text-align: justify;
+	border-radius: 5px;
+}
+
+#spotlightContent{
+	padding: 10px;
+}
+
+#spotlightImage{
+	margin: 5px auto;
+	min-height: 100px;
+	width: 183px;
+}
+
+#latestBlogs{
+	background-color: #028482;
+	float: left;
+	width: 480px;
+	min-height: 300px;
+	margin: 5px;
+	text-align: justify;
+	border-radius: 5px;
+}
+
+	#latestBlogs p{
+		padding: 0 10px;
+	}
+
+#sidebarBottom{
+	float: right;
+	background-color: #b76eb8;
+	width: 250px;
+	min-height: 167px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#signUpForm{
+	margin-left: 10px;
+}
+
+#submitButton{
+	text-align:center;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+
+#submit{
+	box-shadow: 5px 5px;
+}
+
+	#submit:hover{
+		font-weight: bold;
+	}
+
+#footerLeft{
+	float: left;
+	width: 210px;
+	color: #000;
+}
+
+#footerLinks li{
+	list-style: none;
+	padding: 5px;
+}
+
+#footerLinks a{
+	display: block;
+	text-indent: -9999px;
+}
+
+#btnFacebook{
+	background: url(../images/Spritesheet.png);
+	background-position: -11px 0;
+	height: 25px;
+	width: 25px;
+	border-radius: 5px;
+}
+
+#footerCenter{
+	float: left;
+	width: 300px;
+}
+
+	#footerCenter ul li{
+		list-style: none;
+		display: inline;
+		padding: 7px;
+	}
+
+	#footerCenter a{
+		color: #000;
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+		#footerCenter a:hover{
+			background-color: #7aba7a;
+		}
+
+#footerRight{
+	float: right;
+	color: #000;
+	width: 400px;
+}
+
+	#footerRight p{
+		text-align: right;
+	}
+
+/** IDs for Events **/
+
+#eventsHeader{
+	min-height: 150px;
+	width: 940px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #7aba7a;
+	border-radius: 5px;	
+}
+
+#eventsHeader h2{
+	font-size: 2.5em;
+	margin: 15px 0 0 10px;
+}
+
+#eventsHeader p, #upcomingEvents p{
+	font-size: 1.25em;
+	margin-left: 10px;
+}
+
+#eventsCalendar{
+	min-height: 400px;
+	width: 930px;
+	margin: 5px;
+	padding: 10px;
+	background-color: #028482;
+	border-radius: 5px;
+}
+
+#eventsCalendar h3, #upcomingEvents h3{
+	margin: 10px;
+	font-size: 1.5em;
+	margin-left: 5px;
+}
+
+#upcomingEvents{
+	min-height: 400px;
+	width: 930px;
+	margin: 5px;
+	padding: 10px;
+	background-color: #7aba7a;
+	border-radius: 5px;
+}
+
+
+/** IDs for Places We Love **/
+
+#placesContent{
+	min-height: 460px;
+	width: 930px;
+	margin: 5px;
+	padding: 10px;
+	background-color: #7aba7a;
+	border-radius: 5px;
+}
+
+#placesIntro h2{
+	font-size: 2.5em;
+	width: 640px;
+	margin-top: 20px;
+}
+
+#placesIntro{
+	min-height: 280px;
+	width: 640px;
+	background-color: #7aba7a;
+	float: left;
+	margin-left: 20px;
+}
+
+#placesIntro p{
+	font-size: 1.5em;
+}
+
+#sideCategories{
+	min-height: 270px;
+	width: 230px;
+	background-color: #7aba7a;
+	float: right;
+	padding: 0 20px;
+}
+
+#sideCategories ul{
+	list-style: none;
+}
+
+#sideCategories ul li{
+	text-align: center;
+	margin: 30px 20px;
+}
+
+#sideCategories ul a{
+	text-decoration: none;
+	color: #000;
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
+/** IDs for Meal Time **/
+
+#mealTimeHeader{
+	min-height: 65px;
+}
+
+#mealTimeHeader p{
+	margin-left: 30px;
+	font-size: 1.15em;
+}
+
+/** IDs for About **/
+
+#aboutUs{
+	background-color: #7aba7a;
+	min-height: 440px;
+	width:910px;
+	margin: 5px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#aboutUs h3{
+	font-size: 1.5em;
+}
+
+/** IDs for Contact**/
+
+#comments{
+	padding: 10px;
+	margin: 5px;
+	background-color: #7aba7a;
+	width: 610px;
+	min-height: 700px;
+	font-size: 20px;
+	border-radius: 5px;
+	float: right;
+}
+
+#commentSubmit{
+	text-align: center;
+}
+
+#contactLeft{
+	float: left;
+	width: 290px;
+	min-height: 700px;
+	background-color: #7aba7a;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px;
+	font-size: 1.25em;
+}
+
+#contactSidebar span{
+	font-style: italic;
+}
+
+/** IDs for Sitemap **/
+
+#sitemap{
+	padding: 10px;
+	min-height: 360px;
+}
+
+#sitemap h2{
+	font-size: 2em;
+}
+
+#leftSitemap{
+	float: left;
+	margin: 5px 40px;
+}
+
+#centerSitemap{
+	float: left;
+	margin: 35px 60px;
+}
+
+#rightSitemap{
+	float: left;
+	margin: 35px 60px;
+}
+
+#sitemap ul li{
+	padding: 5px;
+	list-style: none;
+}
+
+/** Classes **/
+
+.clear{
+	clear: both;
+}
+
+.justify{
+	text-align: justify;
+}
+
+.indent{
+	margin-left: 20px;
+}
+
+.center{
+	text-align: center;
+}
+
+.homeBlog{
+	margin: 5px 0;
+}
+
+.homeBlog a{
+	color: #000;
+}
+
+.homeBlog h3{
+	padding-left: 10px;
+}
+
+.homeBlogInfo{
+	float: left;
+}
+
+.calendarIcon{
+	height: 17px;
+	width: 18px;
+	background: url(../images/Spritesheet.png) no-repeat;
+	background-position: -71px -1px;
+	float: left;
+}
+
+.calendarIconHome{
+	margin: 2px 0 0 10px;
+}
+
+.blogDate{
+	text-transform: uppercase;
+}
+
+.blogAuthor{
+	text-transform: uppercase;
+}
+
+.categoryHeader{
+	height: 40px;
+	width: 910px;
+	background-color: #7aba7a;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px 20px;
+}
+
+.categoryHeader h2{
+	font-size: 2em;
+}
+
+.categoryHeader a{
+	text-decoration: none;
+	color: #000;
+}
+
+.categoryHeader a:hover{
+	text-decoration: underline;
+}
+
+.itemArticle{
+	background-color: #7aba7a;
+	min-height: 380px;	
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.articleAlone{
+	width: 940px;
+}
+
+.articleInSection{
+	width: 930px;
+}
+
+.itemInfo ul li{
+	margin: 0 0 10px 20px;
+}
+
+.itemHeader{
+	width: 350px;
+}
+
+.itemHeader h3{
+	font-size: 1.5em;
+}
+
+.itemInfo{
+	float: left;
+	width: 530px;
+	padding: 5px;
+}
+
+.eventDetails{
+	border: 1px solid black;
+	min-height: 100px;
+	width: 415px;
+	padding: 10px 10px 0 10px;
+	margin: 10px 0 0 20px;
+	background-color: #f7f4ed;
+}
+
+.itemDetails ul{
+	list-style: none;
+}
+
+.span1{
+	margin-left: 58px;
+}
+
+.span2{
+	margin-left: 5px;
+}
+
+.span3{
+	margin-left: 14px;
+}
+
+.itemLink{
+	margin-left: 20px;
+}
+
+.itemMap{
+	float: right;
+	background-color: #f0f0f0;
+	min-height: 340px;
+	width: 375px;
+	margin: 10px 5px 5px 5px;
+}
+
+.categoryBTN{
+	height: 30px;
+	width: 210px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 5px 5px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.categoryBTN:hover{
+	border: 2px solid #028482;
+	color: #028482;
+}
+
+.blogHeader{
+	font-size: 1.5em;
+}
+
+.calendarIconBlogs{
+	margin: 1px 5px 0 0;
+}
+
+/** Classes for Events **/
+
+.eventsCategorySlideRight{
+	position: relative;
+	animation: categorySlideRight 1.5s;
+	-webkit-animation: categorySlideRight 1.5s;
+}
+
+.eventsCategorySlideLeft{
+	position: relative;
+	animation: categorySlideLeft 1.5s;
+	-webkit-animation: categorySlideLeft 1.5s;
+}
+
+.eventsMenu{
+	text-align: center;
+}
+
+.eventsMenu li{
+	display: inline;
+	list-style: none;
+	font-size: 1.25em;
+	margin: 30px 4px;
+	padding: 5px;
+	line-height: .5em;
+}
+
+.eventsMenu a{
+	text-decoration: none;
+	color: #000;
+	font-size: .9em;
+	line-height: 1.5em;
+}
+
+/** Classes for Places **/
+
+.placesCategoryDrop{
+	position: relative;
+	animation: categoryDrop 1s;
+	-webkit-animation: categoryDrop 1s;
+}
+
+/** Classes for blogs **/
+
+.blogItem{
+	min-height: 400px;
+	width: 910px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #7aba7a;
+	margin: 5px;
+}
+
+.blogImage{
+	float: right;
+	height: 382px;
+	width: 512px;
+	margin: 4px 0px 10px 20px;
+}
+
+/** Classes for Resources **/
+
+.resourcesSection{
+	min-height: 1000px;
+	background-color: #7aba7a;
+	width: 940px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.resourcesSection h3{
+	font-size: 1.6em;
+	margin-left: 10px;
+}
+
+.resourcesSection h4{
+	font-size: 1.35em;
+	margin: 0;
+}
+
+
+
