@@ -1,0 +1,506 @@
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 800px;
+	color: #000;
+}
+
+header{
+	height: 115px;
+	width: 100%;
+	background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Standard*/
+	border-bottom: 1px solid black;
+	/** background-color: #7193B6; **/
+	/** background-color: #4972BF; **/
+}
+
+header h1{
+	font-family: 'Philosopher', sans-serif;
+	float: left;
+	margin: 15px 10px 15px 20px;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #000;
+}
+
+h3 {
+	color: #000;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 2px;
+}
+
+hr {
+	background-color: rgb(89,134,182);
+	height: 3px;
+	width: 99%;
+	margin: 5px auto;
+}
+
+video {
+	width: 100%;
+	height: 200px;
+}
+
+footer {
+	height: 130px;
+	width: 100%;
+	background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(58,94,202),rgb(89,134,182));;
+	color: #000;
+	padding: 5px 2%;
+	border-top: 1px solid black;
+}
+
+/* IDs */
+
+#homeHeader {
+	float: none;
+	margin: 5px 0;
+}
+
+#enterButton {
+	font-family: 'Philosopher', sans-serif;
+	border: 1px solid black;
+	border-radius: 5px;
+	float: right;
+	margin: 20px 50px;
+	padding: 5px;
+	height: 30px;
+	width: 120px;
+	font-size: 1.75em;
+	background-color: #EEE6D8;
+	text-decoration: none;
+	color: #000;
+}
+
+#enterButton:hover{
+	box-shadow: 5px 5px #000;
+}
+
+#container{
+	height: 800px;
+	width: 100%;
+	position: relative;
+	background-image: url('../images/7329631324_0a73d3120b_b.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#Buddhist{
+	top: 150px;
+
+	background-image: url('../images/Buddhism_dham_jak2.png');
+}
+
+#Christian{
+	top: 214px;
+	height: 95px;
+	background-image: url('../images/Celtic_Cross2.png');
+}
+
+#Hindu{
+	top: 315px;
+	height: 60px;
+	background-image: url('../images/HinduSymbol.png');
+}
+
+#Islamic{
+	top: 383px;
+	height: 60px;
+	background-image: url('../images/IslamSymbol_colored.jpg');
+}
+
+#Jewish{
+	top: 450px;
+	height: 70px;
+	background-image: url('../images/Star_of_David.png');
+}
+
+#Taoist{
+	top: 527px;
+	height: 60px;
+	background-image: url('../images/Yin_yang.png');
+}
+
+.relSymbol {
+	position: fixed;
+	left: 75px;	
+	height: 60px;
+	width: 60px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.relSymbol:hover {
+	border: 2px solid rgb(89,134,182);
+}
+
+/** mountains-9262_1920.jpg **/
+
+#quote{
+	position: absolute;
+	width: 360px;
+	font-size: 1.25em;
+	
+}
+
+#introQuote {
+	position: absolute;
+	margin-top: 240px;
+	left: 50%;
+	margin-left: -180px;
+	font-size: 1.5em;	
+}
+
+#footnote {
+	color: #fff;
+}
+
+#footnote a {
+	color: #fff;
+}
+
+#copyright{
+	float: right;
+}
+
+#copyright p {
+	margin: 0;
+}
+
+#copyright a{
+	color: #000;
+}
+
+#imageSlider{
+	background-color: #eee;
+	width: 60%;
+	min-height: 50px;
+	margin: 0 1%;
+	float: left;
+}
+
+#textSlider{
+	width: 37%;
+	margin-right: 1%;
+	float: right;
+	font-size: 1.25em;
+	text-align: center;
+	line-height: 190px;
+}
+
+#textSlider ul li:first-child{
+	color: #000099;
+}
+
+#textSlider ul li:nth-child(2){
+	color: #00CC00;
+}
+
+#textSlider ul li:nth-child(3){
+	color: #6600CC;
+}
+
+#textSlider ul li:nth-child(4){
+	color: #FF3300;
+}
+
+#textSlider ul li:nth-child(5){
+	color: #006600;
+}
+
+#textAdventure{
+	height: 110px;
+	width: 95%;
+	padding: 3%;
+	background-color: #000;
+	margin: 0 auto;
+	color: #018500;
+	font-size: 1.25em;
+	line-height: 1em;
+	border: 1px solid #018500;
+	border-radius: 5px;
+}
+
+#textAdventure p{
+	margin: 0;
+}
+
+#textAdventure:hover {
+	border: 3px solid #018500;
+}
+
+/* about page */
+
+#aboutContainer{
+	height: 650px;
+}
+
+#aboutSiteImage, #meImage {
+	margin: 5px 1%;
+}
+
+#aboutContainer p{
+	text-align: justify;
+	font-size: 1.13em;
+	margin-right: 1%;
+}
+
+#aboutSite{
+	margin: 5px, 2%, 20px, 2%;
+}
+
+#aboutSiteImage {
+	float: left;
+	height: 250px;
+	width: 40%;
+	border: 1px solid #000;
+	background: url('../images/7329631324_0a73d3120b_b.jpg') no-repeat;
+	background-size: 100%;
+}
+
+#siteDescription{
+	float: right;
+	height: 250px;
+	width: 58%;
+}
+
+#meImage{
+	float: left;
+	height: 200px;
+	width: 40%;
+	border: 1px solid #000;
+	background: url('../images/Stonehenge.jpg') no-repeat;
+	background-size: 100%;
+}
+
+#meDescription{
+	float: right;
+	height: 250px;
+	width: 58%;
+}
+
+/* navbar classes */
+
+.navbar-default {
+	background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Standard*/
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus{
+	color: #000;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #fff;
+}
+
+.navbar-nav>li>a {
+	/* padding-top: 5px;
+	padding-bottom: 10px; */
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+	background-color: transparent;
+	color: #fff;
+}
+
+.dropdown-menu{
+	background-color: rgb(89,134,182);
+	font-size: 1.25em;
+	border-radius: 5px;
+	border: 1px solid black;
+
+	animation: DropFade 0.5s;
+	-webkit-animation: DropFade 0.5s;
+
+}
+
+.dropdown-menu>li>a {
+	color: #000;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	background-color: #fff;
+	color: #000;
+}
+
+/* classes */
+
+.layout{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.list {
+	list-style: none;
+}
+
+.photoCredits {
+	float: left;
+}
+
+.photoCredits a {
+	color: #000;
+	padding: 0;
+	font-size: .75em;
+	line-height: .5em;
+}
+
+.photoCredits p {
+	margin: 0;
+}
+
+/* classes for index */
+
+.quoteText{
+	font-weight: bold;
+}
+
+.fixBottomRight{
+	position: fixed;
+	right: 10px;
+	top: 600px;
+}
+
+/* for image slider */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+/* for masonry grid */
+
+	#masonry{
+		margin-top: 20px;
+	}
+
+	#masonry, .item, .sidebarTop, .wide, .sidebarLarge, .sidebarBottom {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+      }
+ 
+      .item {
+        width:  33%;
+        height: 50px;
+        padding: 1%;
+        float: left;
+        background: #fff;
+      }
+
+      .item a {
+      	color: #000;
+      }
+
+      .item p {
+      	margin: 2px;
+      }
+ 
+      .item.sidebarTop {
+        width:  33%;
+        height: 350px;
+        float: right;
+     
+      }
+ 
+      .item.wide {
+        width:  66%;
+        height: 260px;
+        float: left;
+      }
+ 
+      .item.sidebarLarge {
+        width:  33%;
+        height: 400px;
+        float: right;
+      }
+
+      .item.sidebarBottom {
+      	width: 33%;
+      	height: 250px;
+      	float: right;
+      }
+
+/* CSS Animation */
+
+@keyframes DropFade{
+	from{ opacity: 0; }
+	to{  opacity: 1; }
+}
+
+@-webkit-keyframes DropFade{
+	from{ opacity: 0; }
+	to{  opacity: 1; }
+}
+
+/* media queries */
+
+@media (min-width: 1030px) {
+	header h1{
+		font-size: 3em;
+	}
+}
+
+@media ( min-width: 768px ) { 
+    .navbar > .layout {
+        text-align: center;
+    }
+    .navbar-header,.navbar-brand,.navbar .navbar-nav,.navbar .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .collapse.navbar-collapse {
+        width: auto;
+        clear: none;
+    }
+
+    .nav>li>a{
+    	padding: 0 40px 10px 40px;
+    	font-size: 1.5em;
+    }
+
+}
+
