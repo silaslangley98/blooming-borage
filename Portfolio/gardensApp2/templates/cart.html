@@ -1,0 +1,48 @@
+
+<div ng-show = "getItemCount()">
+
+	<table>
+		<thead>
+			<tr>
+				<th>Plant</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Total</th>
+				<th>&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="plantRows" ng-repeat="item in items">
+				<td ng-bind="item.name"></td>
+				<td>
+					<input type="input" ng-model="item.quantity">
+				</td>
+				<td>{{item.price | currency}}</td>
+				<td>{{item.price * item.quantity | currency}}</td>
+				<td>
+					<button type="button" ng-click="removeItem(item.guid)">
+						Remove
+					</button>
+				</td>
+			</tr>
+			
+			<tr id="totalRow">
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				
+				<td>
+					<p><strong>Total</strong></p>
+				</td>
+				<td>
+					<p><strong>{{cartTotal() | currency}}</strong></p>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+			
+    <button type="button" ng-click="emptyCart()">
+        Empty Cart
+    </button>
+       
+</div>
