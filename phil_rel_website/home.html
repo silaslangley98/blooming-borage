@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Philosophy of Religion</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<link href="css/FeedEk.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
 
@@ -26,7 +27,8 @@
 			    </button>
 			</div>
 
-			<h1 id="homeHeader">Explore the Philosophy of Religion</h1>
+			<h1 id="homeHeader">Philosophy of Religion</h1>
+			<p id="definition">The careful examination and clarification of religious beliefs and concepts using the tools and insights of philosophy</p>
 			
 		    <div id="menu" class="collapse navbar-collapse" id="bs-collapse">
 		      
@@ -70,7 +72,7 @@
 </header>
 
 <div class="layout clear">
-	<ul class="list">
+	<!-- <ul class="list">
 		<li>
 			<a href="#">
 				<div id="Buddhist" class="relSymbol"></div>
@@ -101,13 +103,13 @@
 				<div id="Taoist" class="relSymbol"></div>
 			</a>
 		</li>
-	</ul>
+	</ul> -->
 
 
 	<div id='masonry'>
 	  	
 	  	<div class="item wide">
-			<h3>what philosophers of religion think about...</h3>
+			<h3>What philosophers of religion think about...</h3>
 			<hr>
 			<div class="clear">
 			<div id="imageSlider">
@@ -159,35 +161,125 @@
 			  
 			  Your browser does not support the video tag.
 			</video>
+		<!--	iframe width="100%" height="200"
+				src="http://www.youtube.com/embed/3AZUV2-J8HY">
+			</iframe> -->
 			<p>This tutorial is the first in a series about philosophical issues in the Christian, Jewish, and Islamic belief that God will raise us from the dead after we die.</p>
 	  	</div>
-	  	<div class="item wide">
+	  	<div class="item wideTaller">
 	  		<h3>Philosophers</h3>
 	  		<hr>
-	  		<p>Coming Soon!</p>
-	  		<p>A carousel showcasing famous philosophers of religion.</p>
+	  		<ul id="philosopherCarousel" class="bxslider fade-area">
+			  <li><img src="images/Lao_Tzu.jpg" /></li>
+			  <li><img src="images/Avicenna_resized.jpg" /></li>
+	  		  <li><img src="images/Averroes_Cordoba.jpg" /></li>
+			  <li><img src="images/Aquinas.jpg"></li>
+			  <li><img src="images/Descartes_Hals_Taller.jpg" /></li>
+			  <li><img src="images/Pascal_Blaise_Taller.jpg" /></li>
+			  <li><img src="images/David_Hume_cropped.jpg" /></li>
+			  <li><img src="images/Kierkegaard_Taller.jpg" /></li>
+			  <li><img src="images/William_James_Taller.jpg" /></li>
+			  <li><img src="images/Alvin_Plantinga_cropped.jpg" /></li>	  
+			</ul>
+
+			<div id="PhilosopherInfo"></div>
 	  		
 	  	</div>
 	    <div class="item sidebarLarge">
 	    	<h3>Blogs</h3>
 	    	<hr>
-	    	<p>Coming soon!</p>
-	    	<p>A blog feed of top bloggers in the philosophy of religion.</p>
+	    	<p>Matt McCormick at <a class="blogLink" href="http://provingthenegative.com" target="_blank">provingthenegative.com</a>:</p>   	
+	    	<div id="divRss1"></div>
 	    	
+	    	<p><a class="blogLink" href="http://philosophyofreligion.org" target="_blank">philosophyofreligion.org</a>:</p>
+	    	<div id="divRss2"></div>
+	    	
+	    	<p>Peter Rollins at <a class="blogLink" href="http://peterrollins.net" target="_blank">peterrollins.net</a>:</p>
+	    	<div id="divRss3"></div>
+	    
+	    	<p>James K.A. Smith at <a class="blogLink" href="http://forsclavigera.blogspot.com" target="_blank">forsclavigera.blogspot.com</a>:</p>
+	    	<div id="divRss4"></div>
+
+			<p><a class="blogLink" href="http://indianphilosophyblog.org/category/philosophical-topics/philosophy-of-religion/" target="_blank">indianphilosophyblog.org</a>'s philosophy of religion blog:</p>
+	    	<div id="divRss5"></div>
+
 	    </div>
+
 	  	<div class="item wide">
-	  		<h3>Questions</h3>
+	  		<h3>Religions</h3>
 	  		<hr>
-	  		<p> Coming soon!</p>
-	  		<p>An interactive display of prominent questions in the philosophy of religion.</p>
+	  		<div id="religionGallery">
+				<div class="left relList">
+					<a href="#">
+						<div id="Buddh" class="religion"></div>				
+					</a>
+				</div>
+				<div class="left relList">
+					<a href="#">
+						<div id="Chr" class="religion"></div>					
+					</a>
+				</div>
+				<div class="left relList">
+					<a href="#">
+						<div id="Hin" class="religion"></div>						
+					</a>
+				</div>
+				<div class="left relList">
+					<a href="#">
+						<div id="Isl" class="religion"></div>					
+					</a>
+				</div>
+				<div class="left relList">
+					<a href="#">
+						<div id="Jew" class="religion"></div>						
+					</a>
+				</div>
+				<div class="left relList">
+					<a href="#">
+						<div id="Tao" class="religion"></div>
+
+					</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<p>More to come. . .</p>
+		</div>
+
+
 	  		
-	  	</div>
+	  	<!--	<div id="f1_container" class="left">
+				<div id="f1_card" class="shadow">
+				  <div class="front face">
+				    <img id="buddhistSymbol" src="images/Buddhism_dham_jak2.png"/>
+				  </div>
+				  <div class="back face center">
+				    <p>This is nice for exposing more information about an image.</p>
+				    <p>Any content can go here.</p>
+				  </div>
+				</div>
+			</div>
+
+			<div id="f1_container" class="left">
+				<div id="f1_card" class="shadow">
+				  <div class="front face">
+				    <img id="cross" src="images/Celtic_Cross2.png"/>
+				  </div>
+				  <div class="back face center">
+				    <p>This is nice for exposing more information about an image.</p>
+				    <p>Any content can go here.</p>
+				  </div>
+				</div>
+			</div>
+	  		
+	  	</div> -->
+
 		<div class="item wide">
 			<h3>Famous Arguments</h3>
 			<hr>
-			<p>Coming soon!</p>
-			<p>An interactive display of famous arguments in the philosophy of religion.
+			<p>Coming Soon!</p>
+			
 		</div>
+
 		<div class="item sidebarBottom">
 	     	<h3>Games</h3>
 	     	<hr>
@@ -227,23 +319,64 @@
 </footer>
 
 <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-
 <script src="js/bootstrap.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
-<!-- <script src='js/masonry.pkgd.min.js'></script> -->
+<script src="js/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript" src="js/FeedEk.js"></script>
+<script src="js/script.js"></script>
 <script>
 	$(function() {
 	    $(".rslides").responsiveSlides();
-	  });
+	 });
+
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+		  minSlides: 3,
+		  maxSlides: 5,
+		  slideWidth: 100,
+		  slideHeight: 200,
+		  slideMargin: 10
+		});
+	});
+
+	$('#divRss1').FeedEk({
+		FeedUrl:'http://www.provingthenegative.com/feeds/posts/default?alt=rss',
+		MaxCount: 1,
+		ShowDesc: false,
+		TitleLinkTarget:'_blank'
+	});
+
+	$('#divRss2').FeedEk({
+		FeedUrl:'http://philosophyofreligion.org/?feed=rss2',
+		MaxCount: 1,
+		ShowDesc: false,
+		TitleLinkTarget:'_blank'
+	});
+
+	$('#divRss3').FeedEk({
+		FeedUrl:'http://peterrollins.net/category/blog/philosophytheology/feed/',
+		MaxCount: 1,
+		ShowDesc: false,
+		TitleLinkTarget:'_blank'
+	});
+
+	$('#divRss4').FeedEk({
+		FeedUrl:'http://forsclavigera.blogspot.com/feeds/posts/default?alt=rss',
+		MaxCount: 1,
+		ShowDesc: false,
+		TitleLinkTarget:'_blank'
+	});
+
+	$('#divRss5').FeedEk({
+		FeedUrl:'http://indianphilosophyblog.org/category/philosophical-topics/philosophy-of-religion/feed/',
+		MaxCount: 1,
+		ShowDesc: false,
+		TitleLinkTarget:'_blank'
+	});
 
 
-
-	/** var container = document.querySelector('#masonry');
-	var masonry = new Masonry(container, {
-		columnWidth: 200,
-		itemSelector: '.item'
-	}); --> **/
-
+	
 	
 </script>
 

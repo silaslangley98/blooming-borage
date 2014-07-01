@@ -8,11 +8,17 @@ body{
 header{
 	height: 115px;
 	width: 100%;
-	background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Safari 5.1-6*/
-	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Fx 3.6-15*/
-	background: linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Standard*/
-	border-bottom: 1px solid black;
+	color: #fff;
+	background: -webkit-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(46,168,213),rgb(0,96,157));
+
+	/* background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182));
+	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182));
+	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182));
+	background: linear-gradient(rgb(58,94,202),rgb(89,134,182));
+	border-bottom: 1px solid black; */
 	/** background-color: #7193B6; **/
 	/** background-color: #4972BF; **/
 }
@@ -23,7 +29,7 @@ header h1{
 	margin: 15px 10px 15px 20px;
 	font-size: 2.5em;
 	font-weight: bold;
-	color: #000;
+	color: #fff;
 }
 
 h3 {
@@ -34,7 +40,7 @@ h3 {
 }
 
 hr {
-	background-color: rgb(89,134,182);
+	background-color: rgb(0,96,157);
 	height: 3px;
 	width: 99%;
 	margin: 5px auto;
@@ -47,11 +53,15 @@ video {
 
 footer {
 	height: 130px;
-	width: 100%;
-	background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Safari 5.1-6*/
-	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Fx 3.6-15*/
-	background: linear-gradient(rgb(58,94,202),rgb(89,134,182));;
+	background: -webkit-linear-gradient(rgb(0,58,105),rgb(2,87,151)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(0,58,105),rgb(2,87,151)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(0,58,105),rgb(2,87,151)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(0,58,105),rgb(2,87,151));
+	
+	/* background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); 
+	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); 
+	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182));
+	background: linear-gradient(rgb(58,94,202),rgb(89,134,182)); */
 	color: #000;
 	padding: 5px 2%;
 	border-top: 1px solid black;
@@ -59,9 +69,18 @@ footer {
 
 /* IDs */
 
+#indexHeader{
+	margin: 30px 10px 5px 40px;
+}
+
 #homeHeader {
 	float: none;
-	margin: 5px 0;
+	margin: 0 0 5px 0;
+	color: #000;
+}
+
+#definition {
+	font-size: 1.25em;
 }
 
 #enterButton {
@@ -69,7 +88,7 @@ footer {
 	border: 1px solid black;
 	border-radius: 5px;
 	float: right;
-	margin: 20px 50px;
+	margin: 36px 50px;
 	padding: 5px;
 	height: 30px;
 	width: 120px;
@@ -84,42 +103,67 @@ footer {
 }
 
 #container{
-	height: 800px;
+	height: 598px;
 	width: 100%;
 	position: relative;
-	background-image: url('../images/7329631324_0a73d3120b_b.jpg');
+	background-image: url('../images/Ocean_Water_2.jpg');
+	/* background-image: url('../images/7329631324_0a73d3120b_b.jpg'); */
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
+#Buddh{
+	background-image: url('../images/Buddhism_dham_jak2.png');
+}
 #Buddhist{
 	top: 150px;
 
 	background-image: url('../images/Buddhism_dham_jak2.png');
 }
 
+#Chr{
+	height: 95px;
+	background-image: url('../images/Celtic_Cross2.png');
+}
 #Christian{
 	top: 214px;
 	height: 95px;
 	background-image: url('../images/Celtic_Cross2.png');
 }
 
+#Hin{
+	height: 60px;
+	background-image: url('../images/HinduSymbol.png');
+}
 #Hindu{
 	top: 315px;
 	height: 60px;
 	background-image: url('../images/HinduSymbol.png');
 }
 
+#Isl{
+	height: 60px;
+	background-image: url('../images/IslamSymbol_colored.jpg');
+}
 #Islamic{
 	top: 383px;
 	height: 60px;
 	background-image: url('../images/IslamSymbol_colored.jpg');
 }
 
+#Jew{
+	height: 70px;
+	background-image: url('../images/Star_of_David.png');
+}
 #Jewish{
 	top: 450px;
 	height: 70px;
 	background-image: url('../images/Star_of_David.png');
+}
+
+#Tao{
+	height: 60px;
+	background-image: url('../images/Yin_yang.png');
 }
 
 #Taoist{
@@ -141,41 +185,49 @@ footer {
 	border: 2px solid rgb(89,134,182);
 }
 
-/** mountains-9262_1920.jpg **/
+.religion{
+	height: 60px;
+	width: 60px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.relList{
+	margin: 20px 15px;
+}
+
+/* index */
 
 #quote{
 	position: absolute;
 	width: 360px;
 	font-size: 1.25em;
+	color: #fff;
 	
 }
 
 #introQuote {
 	position: absolute;
-	margin-top: 240px;
+	margin-top: 170px;
 	left: 50%;
-	margin-left: -180px;
-	font-size: 1.5em;	
+	margin-left: -240px;
+	font-size: 1.5em;
+	color: #fff;	
 }
 
-#footnote {
-	color: #fff;
-}
-
-#footnote a {
-	color: #fff;
-}
+/* footer */
 
 #copyright{
 	float: right;
 }
 
-#copyright p {
+#copyright {
 	margin: 0;
 }
 
-#copyright a{
-	color: #000;
+#copyright a, #copyright p{
+	color: #fff;
 }
 
 #imageSlider{
@@ -236,6 +288,32 @@ footer {
 	border: 3px solid #018500;
 }
 
+#PhilosopherInfo {
+	width: 95%;
+	height: 135px;
+	box-shadow: 0 0 5px #ccc;
+	margin: 5px auto 0;
+	padding: 2%;
+	background-image: url('../images/512px-Raphael_School_of_Athens_cropped.jpg');
+	background-size: 100%
+}
+
+#religionGallery{
+	-webkit-padding-start: 20px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.relList:hover{
+	box-shadow: 5px 5px 5px 5px #000;	
+}
+
+/* blog feed */
+
+.hrThin{
+	height: 1px;
+}
+
 /* about page */
 
 #aboutContainer{
@@ -258,10 +336,10 @@ footer {
 
 #aboutSiteImage {
 	float: left;
-	height: 250px;
+	height: 235px;
 	width: 40%;
 	border: 1px solid #000;
-	background: url('../images/7329631324_0a73d3120b_b.jpg') no-repeat;
+	background: url('../images/Ocean_Water.jpg') no-repeat;
 	background-size: 100%;
 }
 
@@ -288,20 +366,27 @@ footer {
 
 /* navbar classes */
 
+.navbar {
+	height: 140px;
+}
+
 .navbar-default {
-	background: -webkit-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Safari 5.1-6*/
-	background: -o-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Fx 3.6-15*/
-	background: linear-gradient(rgb(58,94,202),rgb(89,134,182)); /*Standard*/
+	background: -webkit-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(46,168,213),rgb(0,96,157));
 	border: none;
 	border-radius: 0;
+	border-bottom: 1px solid #000;
+
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus{
-	color: #000;
+	color: #fff;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #fff;
+	text-decoration: underline;
 }
 
 .navbar-nav>li>a {
@@ -314,10 +399,17 @@ footer {
 	color: #fff;
 }
 
-.dropdown-menu{
-	background-color: rgb(89,134,182);
-	font-size: 1.25em;
+.navbar-nav>li>.dropdown-menu {
 	border-radius: 5px;
+}
+
+.dropdown-menu{
+	background: -webkit-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(46,168,213),rgb(0,96,157)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(46,168,213),rgb(0,96,157));
+	/* background-color: rgb(46,168,213); */
+	font-size: 1.25em;
 	border: 1px solid black;
 
 	animation: DropFade 0.5s;
@@ -354,7 +446,7 @@ footer {
 }
 
 .photoCredits a {
-	color: #000;
+	color: #fff;
 	padding: 0;
 	font-size: .75em;
 	line-height: .5em;
@@ -362,6 +454,7 @@ footer {
 
 .photoCredits p {
 	margin: 0;
+	color: #fff;
 }
 
 /* classes for index */
@@ -374,6 +467,7 @@ footer {
 	position: fixed;
 	right: 10px;
 	top: 600px;
+	color: #fff;
 }
 
 /* for image slider */
@@ -408,6 +502,59 @@ footer {
   float: left;
   width: 100%;
   border: 0;
+}
+
+/*for religion flip cards*/
+
+#f1_container {
+  position: relative;
+  margin: 10px 20px;
+  width: 125px;
+  height: 125px;
+  z-index: 1;
+}
+
+#f1_container {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  -webkit-transition: all 1.0s linear; ;
+}
+
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: rgb(0,96,157);
+}
+
+.left{
+	float: left;
 }
 
 /* for masonry grid */
@@ -448,8 +595,14 @@ footer {
  
       .item.wide {
         width:  66%;
-        height: 260px;
+        height: 245px;
         float: left;
+      }
+
+      .item.wideTaller {
+      	width: 66%;
+      	height: 375px;
+      	float: left;
       }
  
       .item.sidebarLarge {
@@ -463,6 +616,30 @@ footer {
       	height: 250px;
       	float: right;
       }
+
+/* Philosopher Carousel */
+
+.bx-wrapper .bx-viewport {
+	left: 0;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	bottom: -27px;
+} 
+
+.bx-wrapper {
+	margin-bottom: 30px;
+}
+
+/* blog feed classes */
+
+.blogLink{
+	color: rgb(2,87,151) !important;
+}
+
+.blogLink:hover {
+	text-decoration: underline;
+}
 
 /* CSS Animation */
 
