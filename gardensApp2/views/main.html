@@ -1,0 +1,100 @@
+
+  
+<div>
+  <div id="leftColumn" class = "left">
+    <form>
+      <p id="searchBy">Search by</p>
+      
+      <div>
+        <button type="button"><span>Search by </span>Name</button>
+        <input type="text" ng-model="productSearch.name">
+      </div>
+     
+      <div>
+        <button type="button"><span>Search by </span>Type</button>
+        <input type="text" ng-model="productSearch.type">
+      </div>
+      
+      <div>
+        <button type="button"><span>Search by </span>Family</button>
+        <input type="text" ng-model="productSearch.family">
+      </div>
+      
+      <div>
+        <button type="button"><span>Search by </span>Foliage</button>
+        <input type="text" ng-model="productSearch.foliage">
+      </div>
+     
+      <div>
+        <button type="button"><span>Search by </span>Flower Color</button>
+        <input type="text" ng-model="productSearch.color">
+      </div>
+  
+      <div>
+        <button type="button"><span>Search by </span>Amount of Sun</button>
+        <input type="text" ng-model="productSearch.amountOfSun">
+      </div>
+
+      <div>
+        <button type="button" ng-click="reset()" ng-show="productSearch.name.length || productSearch.type.length || productSearch.family.length || productSearch.foliage.length || productSearch.color.length || productSearch.amountOfSun.length">
+          Reset Search
+        </button>
+      </div>
+          
+    </form>
+
+    <br>
+    <hr>
+    
+    <div ng-show = "browserSizeBig()">
+      <ga-cart plant="plant"></ga-cart>
+    </div>
+   
+    <div ng-hide = "browserSizeBig()">
+      <ga-view-cart-button></ga-view-cart-button>
+    </div>
+
+  </div>
+
+
+  <div id="rightColumn" class="left">
+    <div id="searchShow" ng-show="productSearch.name.length || productSearch.type.length || productSearch.family.length || productSearch.foliage.length || productSearch.color.length || productSearch.amountOfSun.length ">
+      
+      <p>
+        Showing results for: 
+          <strong ng-bind="productSearch.name">  </strong>
+          <strong ng-bind="productSearch.type">  </strong>
+          <strong ng-bind="productSearch.family">  </strong>
+          <strong ng-bind="productSearch.foliage">  </strong>
+          <strong ng-bind="productSearch.color">  </strong>
+          <strong ng-bind="productSearch.amountOfSun">  </strong>
+          
+      </p>
+     
+    </div>
+    <div id="plantGallery">
+      <div id="plantList" class="left" ng-repeat="plant in plants | filter:productSearch | orderBy:'name'">
+
+        <div class="plantCard">
+          <div class="plantHeader" ng-class="{veggieColor: plant.type=='vegetable', herbColor: plant.type=='herb', flowerColor: plant.type=='flower', fruitColor: plant.type=='fruit'}">
+            <div class = "left" ng-bind="plant.name"></div>
+
+            <div class = "right" ng-bind="plant.price | currency"></div>
+          </div>
+          
+          <img ng-src="{{plant.thumbnail}}" alt = "{{plant.title}}">
+          
+          <ga-add-cart-button plant = "plant"></ga-add-cart-button>
+        
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+</div>
+
+
+
+

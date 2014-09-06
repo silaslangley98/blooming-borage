@@ -1,0 +1,192 @@
+
+[
+	{
+		"id": 0,
+		"guid": 123,
+		"price": 1.99,
+		"picture": "",
+		"thumbnail": "images/basil.jpg",
+		"inventory": 15,
+		"name": "basil",
+		"type": "herb",
+		"family": "mint",
+		"foliage": "green",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 1,
+		"guid": 456,
+		"price": 2.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 30,
+		"name": "tomato",
+		"type": "vegetable",
+		"family": "nightshade",
+		"foliage": "green",
+		"amountOfSun": "full"
+	},	
+
+	{
+		"id": 2,
+		"guid": 789,
+		"price": 2.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 30,
+		"name": "strawberry",
+		"type": "fruit",
+		"family": "rose",
+		"foliage": "green",
+		"color": "white",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 3, 
+		"guid": 135,
+		"price": 1.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 5,
+		"name": "bee balm",
+		"type": "flower",
+		"family": "mint",
+		"foliage": "green",
+		"color": "red",
+		"amountOfSun": "partial"
+	},
+
+	{
+		"id": 4,
+		"guid": 680,
+		"price": 1.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 5,
+		"name": "sweet woodruff",
+		"type": "herb",
+		"family": "bedstraw",
+		"foliage": "green",
+		"color": "white",
+		"amountOfSun": "minimal"
+	},
+
+	{
+		"id": 5,
+		"guid": 205,
+		"price": 1.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 15,
+		"name": "red-leaf lettuce",
+		"type": "vegetable",
+		"family": "sunflower",
+		"foliage": "red",
+		"amountOfSun": "partial"
+	},
+
+	{
+		"id": 6,
+		"guid": 237,
+		"price": 3.99,
+		"picture": "",
+		"thumbnail": "images/blueberry.jpg",
+		"inventory": 7,
+		"name": "blueberry",
+		"type": "fruit",
+		"family": "heather",
+		"foliage": "green",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 7,
+		"guid": 945,
+		"price": 1.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 6,
+		"name": "purple basil",
+		"type": "herb",
+		"family": "mint",
+		"foliage": "purple",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 8,
+		"guid": 349,
+		"price": 2.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 20,
+		"name": "zucchini",
+		"type": "vegetable",
+		"family": "gourd",
+		"foliage": ":green",
+		"color": "yellow",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 9,
+		"guid": 248,
+		"price": 2.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 20,
+		"name": "watermelon",
+		"type": "fruit",
+		"family": "gourd",
+		"foliage": "green",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 10,
+		"guid": 931,
+		"price": 0.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 8,
+		"name": "sunflower",
+		"type": "flower",
+		"family": "sunflower",
+		"foliage": "green",
+		"color": "yellow",
+		"amountOfSun": "full"
+	},
+
+	{
+		"id": 11,
+		"guid": 664,
+		"price": 1.99,
+		"picture": "",
+		"thumbnail": "",
+		"inventory": 5,
+		"name": "borage",
+		"type": "herb",
+		"family": "forget-me-not",
+		"foliage": "green",
+		"color": "blue",
+		"amountOfSun": "partial"
+	},
+
+	{
+		"id": 12,
+		"guid": 777,
+		"price": 2.99,
+		"picture": "",
+		"thumbnail": "images/lavender_bigger.jpg",
+		"inventory": 22,
+		"name": "lavender",
+		"type": "flower",
+		"family": "mint",
+		"foliage": "grey green",
+		"color": "purple",
+		"amountOfSun": "full"
+	}
+
+]

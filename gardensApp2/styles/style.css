@@ -1,0 +1,324 @@
+header{
+	height: 80px;
+	background: -webkit-linear-gradient(left top, rgb(128,255,0), rgb(0,153,0), rgb(0,102,0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgb(128,255,0), rgb(0,153,0), rgb(0,102,0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgb(128,255,0), rgb(0,153,0), rgb(0,102,0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgb(128,255,0), rgb(0,153,0), rgb(0,102,0)); /* Standard syntax */
+
+	width: 100%;
+}
+
+h1{
+	margin-top: 5px !important;
+	font-size: 3.5em !important;
+}
+
+form button{
+	width: 49%;
+}
+
+form input{
+	width: 45%;
+}
+
+form div{
+	margin: 0 0 20px 0;
+}
+
+table{
+	width: 95%;
+}
+
+table input{
+	width: 40%;
+}
+
+th, tr, td {
+	padding: 5px 10px 5px 0 !important;
+	width: 18%;
+}
+
+th{
+	border-bottom: 1px solid rgb(0,102,0);
+}
+
+hr {
+	margin: 0 19px 0 0 !important;
+	
+	border-top: 2px solid rgb(0,102,0) !important;
+}
+
+#searchBy{
+	display: none;
+	text-align: center;
+}
+
+#plantRows{
+	padding-top: 0 !important;
+}
+
+#plantRows:first-child{
+	padding-top: 5px !important;
+}
+
+#totalRow{
+	border-top: 1px solid rgb(0,102,0);
+}
+
+#leftColumn{
+	height: 600px;
+	width: 35%;
+	margin: 15px 0 15px 0;
+}
+
+#rightColumn{
+	width: 65%;
+	height: 1000px;
+	margin: 0;
+}
+
+#searchShow{
+	margin: 12px 0 0 10px;
+}
+
+#plantGallery{
+	margin: 0 0 0 20px;
+}
+
+#plantList{
+	margin: 15px auto 30px auto;
+}
+
+.layout{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.plantCard{
+	height: 300px;
+	width: 200px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+
+.plantCard img{
+	width: 100%;
+	height: 220px;
+}
+
+.plantHeader{
+	height: 40px;
+	width: 90%;
+	border-bottom: 1px solid black;
+	padding: 5px 10px;
+	font-size: 1.25em;
+	line-height: 2.1em;
+	border-radius: 5px 5px 0 0;
+}
+
+.veggieColor{
+	background-color: #669933;
+}
+
+.herbColor{
+	background-color: #6BAE63;
+}
+
+.flowerColor{
+	background-color: #A89ACB;
+}
+
+.fruitColor{
+	background-color: #F78D51;
+}
+
+.cartButton{
+	width: 100%;
+	height: 29px;
+	text-align: center;
+	font-size: 1.25em;
+	padding-top: 1px;
+	border: none;
+	border-top: 1px solid black;
+	border-radius: 0 0 5px 5px;
+}
+
+.cartButton:hover{
+	box-shadow: 0 0 4px 4px black inset;
+}
+
+.viewButtonBelowCard{
+	text-align: center;
+	margin: 5px 0;
+}
+
+@media (max-width: 1325px) {
+
+	.layout{
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 1180px) {
+
+	.layout {
+		width: 95%;
+	}
+}
+
+@media (max-width: 956px) {
+
+	#leftColumn{
+		width: 30%;
+	}
+
+}
+
+@media (max-width: 790px) {
+
+	form button{
+		width: 95%;
+	}
+
+	form input{
+		width: 95%;
+	}
+
+	form div {
+		margin: 0 0 10px 0;
+	}
+
+	header{
+		height: 60px;
+	}
+
+	h1 {
+		margin-top: 10px !important;
+		font-size: 2.5em !important;
+	}
+
+}
+
+@media (max-width: 470px){
+
+	/* when view cart should change location */
+	
+	header{
+		height: 50px;
+	}
+
+	h1{
+		margin: 5px 0 0 0 !important;
+	}
+
+	form span{
+		display: none;
+	}
+
+	#searchBy{
+		display: block;
+		margin: 0;
+	}
+
+	#plantList{
+		margin: 0;
+	}
+
+	.plantCard{
+		margin: 0;
+	}
+
+}
+
+@media(max-width: 390px) {
+
+	h1{
+		font-size: 1.75em !important;
+	}
+	
+}
+
+@media (max-width: 345px) {
+
+	header{
+		height: 35px;
+	}
+
+	h1{
+		margin-top: 5px !important;
+	}
+
+	form button{
+		width: 49%;
+	}
+
+	form input{
+		width: 49%;
+	}
+
+	form div{
+		margin: 0 0 0 0;
+	}
+
+	hr{
+		display: none;
+	}
+
+	#leftColumn{
+		height: 175px;
+		margin: 0 0 5px 0;
+	}
+
+	#rightColumn{
+		margin: 0;
+	}
+
+	#leftColumn, #rightColumn{
+		float: none;
+		width: 99%;
+	}
+
+	#plantGallery{
+		width:200px;
+		margin: 0 auto;
+	}
+
+	#searchShow{
+		margin-top: 28px;
+		height: 20px;
+	}
+
+	#searchShow p {
+		line-height: .9em;
+	}
+
+	
+
+@media (max-width: 282px) {
+
+	header {
+		height: 30px;
+	}
+
+	h1 {
+		font-size: 1.5em !important;
+	}
+
+}
+
+	
+}
