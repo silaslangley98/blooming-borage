@@ -242,7 +242,11 @@
 				</div>
 			</div>
 			<div class="clear"></div>
-			<p>More to come. . .</p>
+
+			<div id="religionName">
+			</div>
+			<div id="religionAbout">
+			</div>			
 		</div>
 
 
@@ -326,6 +330,9 @@
 <script type="text/javascript" src="js/FeedEk.js"></script>
 <script src="js/script.js"></script>
 <script>
+
+	var BuddhistIdea = ["All life is suffering", "Desire causes suffering", "Overcome suffering by becoming detached from your desires", "And realizing that there is no such thing as a self", "Then you will achieve Nirvana, which is a blissful state of consciousness", "And you will escape the cycle of rebirth", "The cycle of rebirth just is", "There is no God controlling it"];
+
 	$(function() {
 	    $(".rslides").responsiveSlides();
 	 });
@@ -375,8 +382,27 @@
 		TitleLinkTarget:'_blank'
 	});
 
+	$("#Buddh").mouseover(
+		function() {
+			$("#religionName").empty();
+			$("#religionName").append("<p><span>Buddhism</span></p>");
+			$("#religionName").addClass("left");
+		
+			$("#religionAbout").setInterval(function()
+				{showTenets(BuddhistIdea);}
+			, 1000);
+				
+		}
+	);
 
-	
+	function showTenets(religion){
+
+		for (i=0; i++; i<=7){
+			$("religionAbout").empty;
+			$("religionAbout").append(religion[i]);
+			$("religionAbout").addClass("right");
+		}
+	}
 	
 </script>
 

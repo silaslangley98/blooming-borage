@@ -112,6 +112,10 @@ footer {
 	background-repeat: no-repeat;
 }
 
+#aboutReligion span{
+	font-weight: bold;
+}
+
 #Buddh{
 	background-image: url('../images/Buddhism_dham_jak2.png');
 }
@@ -555,6 +559,10 @@ footer {
 
 .left{
 	float: left;
+}
+
+.right{
+	float: right;
 }
 
 /* for masonry grid */
