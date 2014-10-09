@@ -1,8 +1,7 @@
 body{
 	height: 2300px;
-
 	font-family: Verdana, helvetica, sans-serif;
-	background-image: url("../images/Sierra_Nevadas_Keith_cropped.jpg");
+	background-image: url("../images/Sierra_Nevadas_Keith2.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -10,19 +9,18 @@ body{
 header{
 	position: fixed;
 	top: 10px;
-	left: 10px;
+	left: .8%;
 	width: 96%;
 	height: 50px;
 	border: 1px solid #000;
 	border-radius: 5px;
 	background-color: rgba(38,38,38,0.5);
-	/* rgba(1,78,254,0.5); */
 	padding: 0 1%;
+	z-index: 1000;
 }
 
 h1{
 	margin: 15px 0;	
-	color: #fff;
 	float: left;
 	font-size: 1.5em;
 	width: 400px;
@@ -32,8 +30,7 @@ footer {
 	background-image: url("../images/Sierra_Nevadas_Keith_Large_Bottom.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height:87px;
-	color: #fff;
+	height: 87px;
 	padding: 1%;
 }
 
@@ -138,46 +135,25 @@ footer {
 	border-radius: 5px;
 }
 
-/* #photoCircle {
-	height: 170px;
-	width: 170px;
-	border: 1px solid #000;
-	border-radius: 100px;
-	background-color: #eee;
-	margin: 10px auto;
-	position: relative;
-	z-index: -1;
-} */
-
 #infoBox {
 	height: 180px;
 	width: 320px;
 	border: 1px solid #000;
-	/* background-color: #ccc; */
     background: -webkit-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* Standard syntax */
-	/* 79,94,92 */
-	/* 38, 38, 38 */
 	z-index: 100;
-	padding: 5px 5px;
-	
+	padding: 5px 5px;	
 }
 
 #infoBox li, #infoBox p {
 	padding: 5px 0;
 }
 
-/* #infoBox p:hover {
-	background-color: #fff;
-	border-left: 5px solid #014EFE;
-} */
-
-#leftBox {
+#leftBox, #rightBox {
 	height: 179px;
 	width: 140px;
-	/* background-color: #fff; */
 	background: -webkit-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Firefox 3.6 to 15 */
@@ -191,21 +167,12 @@ footer {
 	left: 0;
 }
 
+#leftBox {
+	border-right: none;
+}
+
 #rightBox {
-	height: 179px;
-	width: 140px;
-	/* background-color: #fff; */
-	background: -webkit-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(230,230,230), rgb(51,102,153)); /* Standard syntax */
-	border: 1px solid #000;
 	border-left: none;
-	z-index: -1;
-	padding: 5px 5px;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 #leftBox li {
@@ -214,6 +181,11 @@ footer {
 
 #rightBox li {
 	padding: 7px 0;
+}
+
+#title {
+	margin: 5px 10px;
+	text-align: justify;
 }
 
 .larger {
@@ -225,20 +197,15 @@ footer {
 	font-style: italic;
 }
 
-#title {
-	margin: 5px 10px;
-	text-align: justify;
-}
-
 /* Animated Cursor */
 
 .typed-cursor{
     opacity: 1;
-
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -257,58 +224,61 @@ footer {
 
 /* Down Button */
 
-#firstDown {
-	margin: 80px auto 0;
-}
-
 #firstDown, #secondDown, #thirdDown, #fourthDown {
 	display: block;	
 	font-size: 4em;
-	color: #fff;
 	text-align: center;
 	opacity: .75;
-	width: 55px;
-
+	width: 60px;
 }
 
-#firstDown, #secondDown, #fourthDown {
-	color: #fff;
+#responsiveDown {
+	display: block;
+	text-align: center;
+	opacity: .75;
+	font-size: 2.65em;
+	margin: 5px auto 0;
+	width: 43px;
 }
 
-#thirdDown {
-	color: #000;
+#firstDown {
+	margin: 80px auto 0;
 }
 
 #secondDown {
 	margin: 50px auto 0;
 }
 
+#thirdDown {
+	color: #000;
+}
+
 #thirdDown, #fourthDown {
 	margin: 0 auto;
 }
 
-#firstDown:hover, #secondDown:hover, #thirdDown:hover, #fourthDown:hover {
+#responsiveDown:hover, #firstDown:hover, #secondDown:hover, #thirdDown:hover, #fourthDown:hover {
 	opacity: 1;
 }
 
 /* Portfolio IDs */
 
 #ecommerce {
-	margin: 30px 0 0 0;
-	height: 670px;
+	margin: 0;
+	height: 700px;
 	width: 100%;
 	background-color: #336699;
 }
 
 #elearning {
-	height: 670px;
+	height: 750px;
 	width: 100%;
 	background-color: #E6E6E6;
 }
 
 #responsive {
 	margin: 0;
-	height: 670px;
+	height: 750px;
 	width: 100%;
 	background-color: #336699;
 }
@@ -321,9 +291,7 @@ footer {
 
 /** Portfolio Classes **/
 
-.browserBox {
-	
-	height: 505px;
+.browserBox {	
 	width: 55%;
 }
 
@@ -351,7 +319,7 @@ footer {
 
 .description {
 	margin: 52px 1.5% 0;
-	height: 450px;
+	height: 505px;
 	width: 37%;
 	padding: 1%;
 }
@@ -361,7 +329,7 @@ footer {
 }
 
 .leftMargin {
-	margin: 80px 0 0 30px;
+	margin: 80px 0 0 2.5%;
 }
 
 .right {
@@ -369,11 +337,7 @@ footer {
 }	
 
 .rightMargin {
-	margin: 80px 30px 10px 0;
-}
-
-#socialBox {
-	margin: 70px 30px 10px 0;
+	margin: 80px 3% 10px 0;
 }
 
 .white {
@@ -397,7 +361,6 @@ footer {
 }
 
 .description hr {
-	/* width: 220px; */
 	color: #655CA9;
 	margin: 10px 0;
 }
@@ -416,7 +379,7 @@ footer {
 }
 
 .description ul {
-	margin: 10px 20px;
+	margin: 10px 7%;
 }
 
 .description ul li{
@@ -424,18 +387,15 @@ footer {
 	list-style-type: disc;
 }
 
+.responsiveHeader {
+	display: none;
+}
+
 /* See Site Button */
 
-.seeSiteAnchor {
-	color: #000;
-	text-decoration: none;
-}
-
-.seeSiteAnchor:hover {
-	color: #fff;
-}
-
-button.seeSite {
+.seeSite {
+  color: #000;
+  text-decoration: none;
   background-color: #52a8e8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #52a8e8), color-stop(100%, #377ad0));
   background-image: -webkit-linear-gradient(top, #52a8e8, #377ad0);
@@ -456,7 +416,55 @@ button.seeSite {
   line-height: 1.1;
   padding: 3px 5px;
   display: block;
-  margin: 40px auto;
+  margin: 10px auto;
+  text-align: center;
+  width: 112px;
+  -webkit-background-clip: padding-box;
+}
+
+.seeSite:hover {
+	color: #fff;
+	background-color: #3e9ee5;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9ee5), color-stop(100%, #206bcb));
+    background-image: -webkit-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: -moz-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: -ms-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: -o-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    border-top: 1px solid #2a73a6;
+    border-right: 1px solid #165899;
+    border-bottom: 1px solid #07428f;
+    border-left: 1px solid #165899;
+    -webkit-box-shadow: inset 0 1px 0 0 #62b1e9;
+    -moz-box-shadow: inset 0 1px 0 0 #62b1e9;
+    box-shadow: inset 0 1px 0 0 #62b1e9;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #1d62ab;
+    -webkit-background-clip: padding-box;
+}
+
+/* button.seeSite {
+  background-color: #52a8e8;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #52a8e8), color-stop(100%, #377ad0));
+  background-image: -webkit-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: -moz-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: -ms-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: -o-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: linear-gradient(top, #52a8e8, #377ad0);
+  border-top: 1px solid #4081af;
+  border-right: 1px solid #2e69a3;
+  border-bottom: 1px solid #20559a;
+  border-left: 1px solid #2e69a3;
+  border-radius: 16px;
+  -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  -moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  color: #fff;
+  font: normal 1.4em "lucida grande", sans-serif;
+  line-height: 1.1;
+  padding: 3px 5px;
+  display: block;
+  margin: 10px auto;
   text-align: center;
   width: 112px;
   -webkit-background-clip: padding-box;
@@ -481,3 +489,515 @@ button.seeSite {
     text-shadow: 0 -1px 1px #1d62ab;
     -webkit-background-clip: padding-box;
 }
+*/
+
+/* media queries */
+@media screen and (min-width: 1367px) {
+	#socialnetworking {
+		height: 760px;
+	}
+
+	.description {
+		height: 545px;
+	}
+
+}
+
+@media screen and (max-width: 1175px) {
+
+	#firstDown {
+		margin: 40px auto 0;
+	}
+
+	#secondDown, #thirdDown, #fourthDown {
+		margin: 40px auto 0;
+	}
+
+	.description {
+		height: 400px;
+	}
+
+}
+
+@media screen and (max-width: 1112px) {
+
+	.description {
+		margin-top: 56px;
+		height: 380px;
+	}
+
+	.description h2 {
+		font-size: 2.5em;
+	}
+
+	.description h3 {
+		font-size: 2em;
+	}
+
+	.description p, .description ul li {
+		font-size: .9em;
+	}
+	
+	#upperBox {
+		margin: 62px auto 0;
+	}
+
+	#center {
+		margin: 260px auto 0;
+	}
+
+	.rightMargin {
+		margin-bottom: 80px;
+	}
+
+	#firstDown {
+		margin: 10px auto 0;
+	}
+
+	#thirdDown {
+		margin: 20px auto 0;
+	}
+}
+
+@media screen and (max-width: 945px) {
+
+	#ecommerce, #elearning, #responsive, #socialnetworking {
+		height: 600px;
+	}
+
+	.rightMargin {
+		margin-bottom: 90px;
+	}
+
+	#firstDown {
+		font-size: 2.7em;
+		margin-top: 10px;
+	}
+
+	#secondDown, #thirdDown, #fourthDown {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 902px) {
+
+	header {
+		height: 30px;
+	}
+	
+	h1 {
+		font-size: 1.25em;
+		margin: 4px 0 0;
+	}
+
+	.socialIcons {
+		height: 25px;
+		width: 60px;
+		font-size: 2em;
+		margin: 0px 3px;
+	}
+
+	#center {
+		margin: 162px auto 0;
+		height: 105px;
+	}
+
+	#infoBox {
+		height: 103px;
+		font-size: .9em;
+	}
+
+	.responsiveSocials {
+		visibility: hidden;
+	}
+
+	#leftBox, #rightBox, #upperBox {
+		display: none;
+	}
+
+	#ecommerce, #elearning, #responsive {
+		height: 550px;
+	}
+
+	#socialnetworking {
+		height: 600px;
+	}
+
+	.description {
+		/* margin-top: 0; */
+		height: 345px;
+		margin-top: 40px;
+	}
+
+	.description h2 {
+		font-size: 1.7em;
+	}
+	
+	.description hr {
+		-webkit-margin-before: 0.25em;
+		-webkit-margin-after: 0.25em;
+	}
+
+	.description h3 {
+		font-size: 1.25em;
+	}
+
+	.leftMargin {
+		margin: 57px 0 0 2.5%;
+	}
+
+	.rightMargin {
+		margin: 55px 2.5% 80px 0;
+	}
+
+	.seeSite {
+		font-size: 1.2em;
+ 		line-height: .9;
+  		padding: 2px 2px;
+  		width: 100px;
+	}
+
+}
+
+@media screen and (max-width: 835px) {
+
+	.rightMargin {
+		margin-bottom: 120px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+
+	header {
+		height: 30px;
+	}
+	
+	h1 {
+		font-size: 1.25em;
+		margin: 4px 0 0;
+	}
+
+	.socialIcons {
+		height: 25px;
+		width: 60px;
+		font-size: 2em;
+		margin: 0px 3px;
+	}
+
+	.left, .right {
+		float: none;
+	}
+
+	#ecommerce {
+		padding-top: 50px;
+		height: 660px;
+	}
+
+	#elearning {
+		padding-top: 50px;
+		height: 700px;
+	}
+
+	#socialnetworking {
+		padding-top: 50px;
+		height: 720px;
+	}
+
+	#responsive {
+		padding-top: 50px;
+		height: 600px;
+	}
+
+	.responsiveHeader {
+		display: none;
+	}
+
+	.browserBox {
+		width: 70%;
+		margin: 0 auto;
+		/* height: 380px; */
+	}
+
+	.description {
+		width: 95%;
+		margin: 3px auto 0;
+		height: 277px;
+	}
+
+	#responsive .description {
+		height: 200px;
+	}
+
+	#secondDown, #thirdDown, #fourthDown {
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 695px) {
+
+	.description {
+		height: 295px;
+	}
+
+	#responsive .description {
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 597px) {
+	#firstDown {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 590px) {
+
+	header {
+		top: 0;
+	}
+
+	#center {
+		margin: 132px auto 0;
+	}
+
+	#firstDown {
+		font-size: 2em;
+	}
+
+	#ecommerce, #elearning, #responsive, #socialnetworking {
+		padding-top: 35px;
+	}
+
+	#socialnetworking {
+		height: 660px;
+	}
+
+	.description {
+		height: 325px;
+	}
+
+	#responsive .description {
+		height: 230px ;
+	}
+
+}
+
+@media screen and (max-width: 511px) {
+
+	header {
+		display: none;
+	}
+
+	footer{
+		font-size: .9em;
+	}
+
+	#center {
+		margin: 100px auto 0;
+	}
+
+	#infoBox {
+		height: 90px;
+	}
+
+	#center {
+		height: 100px;
+	}
+
+	#infoBox p {
+		padding: 1px;
+		font-size: .98em;
+	}
+
+	.responsiveSocials {
+		visibility: visible;
+		height: 20px;
+		width: 60px;
+		font-size: 1.8em;
+		padding-left: 120px;
+	}
+
+	.responsiveSocials i {
+		color: #336699;
+	}
+
+	.responsiveSocials i:hover {
+		color: #000;
+	}
+
+	.responsiveSocials a {
+		padding-left: 8px;
+	}
+
+	#firstDown {
+		margin-top: 2px;
+	}
+
+	#ecommerce, #elearning, #responsive, #socialnetworking {
+		padding-top: 10px;
+		border-top: 1px solid #000;
+	}
+
+	#elearning {
+		height: 630px;
+	}
+
+	#responsive {
+		height: 530px;
+	}
+
+	#responsive .description {
+		height: 260px;
+	}
+
+	.description h2 {
+		font-size: 1.5em;
+	}
+
+	.description h3 {
+		font-size: 1.1em;
+	}
+
+	.description p, .description ul {
+		font-size: .85em;
+	}
+
+}
+
+@media screen and (max-width: 440px) {
+	#firstDown {
+		font-size: 1.9em;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	
+	footer br {
+		display: none;
+	}
+
+	footer p {
+		padding: 1px 3px;
+	}
+
+	#photoBox, #center {
+		width: 100%;
+		border: none;
+	}
+
+	#infoBox {
+		width: 97.5%;
+		height: 250px;
+		border: none;
+	}
+
+	#center {
+		height: 260px;
+		margin-top: 155px;
+	}
+
+	#infoBox p {
+		padding: 5px;
+		font-size: 1em;
+	}
+
+	#photoBox {
+		padding: 0;
+	}
+
+	#photoBox img {
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+		border: none;
+	}
+
+	#name {
+		width: 200px;
+		display: inline;
+	}
+
+	#webDev {
+		width: 200px;
+	}
+
+	.responsiveSocials {
+		float: right;
+		display: inline;
+		padding-left: 0;
+		width: 84px;
+		font-size: 2em;
+	}
+
+	#firstDown {
+		display: none;
+	}
+
+	#ecommerce, #elearning, #responsive, #socialnetworking {
+		padding-top: 20px;
+	}
+
+	#ecommerce {
+		height: 570px;
+	}
+
+	#socialnetworking {
+		height: 560px;
+	}
+
+	#elearning .description {
+		height: 360px;
+	}
+
+	#responsive .description {
+		height: 280px;
+	}
+
+}
+
+@media screen and (max-width: 340px) {
+
+	#responsiveDown {
+		margin-top: 5px;
+	}
+
+	#ecommerce, #responsive, #socialnetworking  {
+		height: 420px;
+		padding-top: 10px;
+	}
+
+	#elearning {
+		height: 475px;
+		padding-top: 10px;
+	}
+
+	.browserBox {
+		display: none;
+	}
+
+	.description {
+		height: 335px;
+	}
+
+	#elearning .description {
+		height: 420px;
+	}
+
+	#responsive .description {
+		height: 330px;
+	}
+
+	footer {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 318px) {
+
+	#infoBox {
+		width: 96.5%;
+	}
+
+}
+

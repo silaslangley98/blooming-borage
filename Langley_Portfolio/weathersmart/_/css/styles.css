@@ -1,0 +1,426 @@
+body{
+	background-image: url("../../images/squairy_light.png");
+	background-repeat: repeat;
+}
+
+.layout{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.navbar{
+	min-height: 65px;
+	margin-bottom: 5px;
+}
+
+.navbar-default{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-color: transparent;
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-brand{
+	color: #777;
+	display: block;
+	background-image: url("../../images/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+	text-indent: -9999px;
+	width: 200px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #746f70;
+	font-size: 23px;
+	font-weight: 900;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+#hero .layout{
+	background-image: url("../../images/sky.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+}
+
+#hero img{
+	width: 75%;
+	float: right;
+}
+
+section{
+	background-color: #50585a;
+	background-image: url("../../images/Clouds2b.jpg");
+	background-repeat: repeat-x;
+	background-size: 100%;
+	background-position: center 140px;
+}
+
+section .layout{
+	padding-bottom: 20px;
+}
+
+.pure-u-1-3{
+	position: relative;
+	padding-bottom: 60px;
+}
+
+article{
+	padding: 0 10%;
+	min-height: 320px;
+}
+
+article *{
+	color: #fafafa;
+}
+
+article h1{
+	min-height: 160px;
+}
+
+article a{
+	display: block;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #84a2ba;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+footer{
+	padding: 25px 0;
+	background-color: #222222;
+	color: #fafafa;
+}
+
+/** For Second Webpage **/
+
+.bold{
+	font-weight: bold;
+}
+
+#top p{
+	float: left;
+	text-align: right;
+	width: 45%;
+	font-size: 3em;
+	margin-left: 5%;
+	margin-top: 10%;
+}
+
+#top img{
+	width: 40%;
+}
+
+#main{
+	background-color: #50585a;
+	min-height: 880px;
+}
+
+#bestway{
+	font-size: 3em;
+	text-align: center;
+	color: #fff;
+	padding: 40px 0 40px 0;
+}
+
+#page2Grid{
+	width: 90%;
+	margin: 20px auto 0 auto;
+	padding: 10px 5%;
+}
+
+.optionColumn{
+	background-color: rgb(255, 255, 255);
+	height: 590px;
+	border: 1px solid rgb(204, 204, 204);
+	color: #000;
+	padding: 2%;
+}
+
+.optionColumn h2{
+	height: 100px;
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 0 1px rgb(103, 126, 145);
+	line-height: 100px;
+	margin-bottom: 20px;
+}
+
+#leftColumn h2{
+	background: -webkit-gradient (#87ceeb, #7ab9d4);
+	background: -moz-linear-gradient (#87ceeb, #7ab9d4); 
+	background: linear-gradient(#87ceeb, #7ab9d4);	
+}
+
+#middleColumn h2{
+	background: -webkit-gradient (#0066ff, #0033ff);
+	background: -moz-linear-gradient (#0066ff, #0033ff); 
+	background: linear-gradient(#0066ff, #0033ff);	
+}
+
+#rightColumn h2{
+	background: -webkit-gradient (#ccccff, #b8b8e6);
+	background: -moz-linear-gradient (#ccccff, #b8b8e6); 
+	background: linear-gradient(#ccccff, #b8b8e6);
+}
+
+#middleColumn{
+	position: relative;
+	margin-top: -20px;	
+	margin-left: -5%;
+	margin-right: -5%;
+	z-index: 4;
+	height: 620px;
+}
+
+#middleColumn img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(232, 232, 232);
+    margin: 1em auto;
+    padding: 0;
+    width: 90%;
+}
+
+h3, .optionColumn li{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.25em;
+}
+
+#leftColumn .priceBar, #rightColumn .priceBar{
+	height: 60px;
+}
+
+#middleColumn .priceBar{
+	height: 70px;
+	line-height: 70px;
+	margin: 22% auto 5% auto;
+}
+
+.priceBar{
+	display: block;
+	color: #fff;
+	font-size: 1.5em;
+	line-height: 60px;
+	text-shadow: 0 1px rgb(103, 126, 145);
+	text-align: center;
+	width: 80%;
+	border: 1px solid rgb(123, 173, 13);
+	border-radius: 5px;
+	margin: 18% auto 5% auto;
+	background-color: rgb(149, 192, 15); 
+	background: -webkit-gradient (rgb(149, 192, 15), rgb(129, 177, 15));
+	background: -moz-linear-gradient (rgb(149, 192, 15), rgb(129, 177, 15)); 
+	background: linear-gradient(rgb(149, 192, 15), rgb(129, 177, 15));
+}
+
+#page2Footer{
+	background-image: url("../../images/Clouds2b.jpg");
+	min-height: 105px;
+}
+
+@media (max-width: 1235px){
+	#rightColumn h2{
+		line-height: 1em;
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 1106px){	
+	#page2Grid{
+		width: 100%;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 940px){
+	#top p, #bestway{
+		font-size: 2.5em;
+	}
+
+	h3, .optionColumn li{
+	font-size: 1.2em;
+	}
+
+}
+
+@media (max-width: 831px){
+
+	#top p, #bestway{
+		font-size: 2em;
+	}
+
+	.optionColumn h2{
+		font-size: 1.25em;
+	}
+
+	h3, .optionColumn li{
+	font-size: 1em;
+	}
+
+	.optionColumn{
+		height: 570px;
+	}
+
+	#middleColumn{
+		height: 600px;
+	} 
+}
+
+@media (max-width: 767px){
+	
+	#middleColumn{
+		margin-top: 0%;
+	}
+
+	#rightColumn h2{
+		padding-top: 0;
+		line-height: 100px;
+	}
+
+	.optionColumn h2{
+		font-size: 1.75em;
+	}
+
+	h3, .optionColumn li{
+		font-size: 1.25em;
+	}
+
+	.priceBar, #middleColumn .priceBar{
+		margin: 8% auto;
+	}
+}
+
+@media (max-width: 677px){
+	#top p, #bestway{
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 500px){
+	.navbar-default .navbar-brand{
+		width: 60%;
+	}
+
+	.layout{
+		width: 90%;
+	}
+
+	#top p, #bestway{
+		font-size: 1em;
+	}
+
+	#top p{
+		float: none;
+		width: 90%;
+		text-align: center;
+	}
+
+	#top img{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#middleColumn img{
+		width: 20%;
+	}
+}
+
+@media (max-width: 330px){
+	.navbar-default .navbar-brand{
+		background-position: center left;
+		margin: 0 0 0 5%;
+		padding: 0;
+	}
+
+	#top p{
+		margin-top: 5%;
+	}
+
+	.layout{
+		width: 99%;
+	}
+
+	#bestway{
+		margin: 0 5%;
+		padding: 5%;
+	}
+
+	#main{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#page2Grid{
+		width: 100%;
+		margin: 0;
+		padding: 0 10px;
+	}
+
+	#rightColumn h2{
+		line-height: 1em;
+		padding-top: 30px;
+	}
+
+	.optionColumn{
+		height: 550px;
+	}
+
+	#middleColumn{
+		height: 565px;
+	}
+
+}
+
+@media (max-width: 295px){
+	.optionColumn{
+		height: 415px;
+	}
+
+	#middleColumn {
+		height: 435px;
+	}
+
+	.optionColumn h2{
+		font-size: 1.4em;
+		line-height: 72px;
+	}
+
+	#rightColumn h2{
+		line-height: 1em;
+		padding-top: 17px;
+	}
+
+	.optionColumn h2{
+		height: 75px;
+	}
+
+	h3, .optionColumn li{
+		font-size: 1em;
+	}
+
+	hr{
+		margin: .5em auto;
+	}
+
+	.priceBar, #middleColumn .priceBar{
+		margin: 10% auto;
+	}
+}

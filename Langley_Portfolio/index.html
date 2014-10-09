@@ -3,18 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Portfolio, includes samples of ecommerce, elearning, responsive design, and social networking">
+	<title>Silas Langley Portfolio</title>
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href-"css/bootstrap.min.css" rel="stylesheet">
-	<!-- <link href-"css/font-awesome.min.css" rel="stylesheet"> -->
-	<!-- <link href-"css/bootstrap-social.css" rel="stylesheet"> -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<header id="topBar">
-		<h1>Silas Langley, Web Developer</h1>
+		<h1 class = "white">Silas Langley, Web Developer</h1>
 		<div class="socialIcons">
 			<a href="https://github.com/silaslangley98/blooming-borage" target="_blank">
 		    	<i id="github" class="fa fa-github"></i>
@@ -24,24 +23,22 @@
 		  	</a>
 	  	</div>
 	</header>
-
+	
 	<div>
 		<div id = "upperBox">
-			<img id="desktop" src="images/desktop2.png" alt = "desktop icon">
-			<img id="screensIcon" src="images/responsive_design2.png" alt = "responsive design icon">
+			<img id="desktop" src="images/desktop2.png" alt = "desktop icon" />
+			<img id="screensIcon" src="images/responsive_design2.png" alt = "responsive design icon" />
 
 		</div>
 		
 		<div id="center">
 			<div id="photoBox">
-				<img src="images/Stonehenge3.JPG">
-				</img>
+				<img src="images/Stonehenge3.JPG" alt="Silas Langley at Stonehenge" />
 			</div>
-			<div id="infoBox">
-				<br>
+			<div id="infoBox">				
 				<span id="photo"></span>
 				<span id="languages"></span>
-				<span id="frameworks"></span>
+				<span id="frameworks"></span>			
 			</div>
 			<div id="leftBox">
 				<p>Languages</p>
@@ -68,15 +65,16 @@
 	</div>
 
 	<div>
-		<i id="firstDown" class="fa fa-arrow-circle-down"></i>
+		<i id="firstDown" class="white fa fa-arrow-circle-down"></i>
 	</div>
 		
-	<div id="ecommerce">
+	<div id="ecommerce" class="clear">
+		<h2 class="orange responsiveHeader">e-commerce</h2>
 
 		<div class="browserBox left leftMargin">
 			<img class="browserHead" src="images/browser-head.png" alt="browser window head">
 			<div class="screenshot">
-				<img src="images/gardens_screenshot6.png" />			
+				<img src="images/gardens_screenshot6.png" alt="Screenshot of Plant Nursery App" />
 			</div>
 		</div>
 		<div class = "description right white">
@@ -85,7 +83,7 @@
 			<hr>
 			<h3>Garden Store App</h3>
 
-			<p>Libraries and bookstores have electronic catalogs. So why not garden stores and nurseries too? You could search for the store's inventory of plants at computer terminals in the store. Or you could search your smartphone while browsing in the store or on the way to the store. This app is the beginnings of such a catalog.</p>
+			<p>Libraries and bookstores have electronic catalogs. So why not garden stores and nurseries? Search for the store's inventory of plants at computer terminals in the store. Or search on a smartphone on the way to the store or while browsing in the store.</p>
 				<ul>
 					<li>Uses <span>angularJS</span></li>
 					<li>Includes multiple search filters</li>
@@ -93,20 +91,20 @@
 					<li>Includes a <span>shopping cart</span> for quick pre-purchase calculations</li>
 					<li>Features still being added</li>
 				</ul>
-			<button class = "seeSite">
-				<a class = "seeSiteAnchor" href="gardensApp2/index.html" target = "_blank">View Site</a>
-			</button>
 			
+			<a class = "seeSite" href="gardensApp2/index.html" target = "_blank">
+				View Site
+			</a>
+						
 		</div>
 
 		<div class="clear">
-			<i id="secondDown" class="fa fa-arrow-circle-down"></i>
+			<i id="secondDown" class="white fa fa-arrow-circle-down"></i>
 		</div>
 
 	</div>
 
 	<div id="elearning" class="clear">
-
 	
 		<div class = "description left">
 
@@ -121,17 +119,17 @@
 				<li>Will be <span>fully responsive</span> when finished</li>
 			</ul>
 
-			<button class = "seeSite">
-				<a class="seeSiteAnchor" href="http://philosophyofreligion.altervista.org" target = "_blank">View Site</a>
-			</button>
-
+			
+			<a class="seeSite" href="http://philosophyofreligion.altervista.org" target = "_blank">
+				View Site
+			</a>
+			
 		</div>
 		
-
 		<div class="browserBox right rightMargin">
 			<img class="browserHead" src="images/browser-head-phil-rel2.png" alt="browser window head">
 			<div class="screenshot">
-				<img src="images/phil_rel_screenshot.png" />			
+				<img src="images/phil_rel_screenshot.png" alt="Screenshot of Philosophy of Religion Site" />			
 			</div>
 		</div>
 
@@ -144,9 +142,9 @@
 	<div id="responsive" class="clear">
 
 		<div class="browserBox left leftMargin">
-			<img class="browserHead" src="images/browser-head.png" alt="browser window head">
+			<img class="browserHead" src="images/browser-head.png" alt="browser window head" />
 			<div class="screenshot">
-				<img src="images/weathersmart_screenshot3.png" />			
+				<img src="images/weathersmart_screenshot3.png" alt="Screenshot of a Responsive Design Example" />			
 			</div>
 		</div>
 		<div class = "description right white">
@@ -157,14 +155,15 @@
 
 			<p>I developed this web page as a class project for the second in a series of courses in web development at <span>Geekwise Academy</span>. We were given a picture of what this webpage should look like. Then we had to re-create it on our own. I successfully created it so that it looks very much like the picture we were given. I also added gradients to make it look better. The web page is <span>fully responsive</span>. We were allowed and encouraged to use <span>Bootstrap</span> and <span>Pure CSS</span>. So I did. I also used <span>Photoshop</span> to extract the image of the woman from a background photo.</p>
 
-			<button class = "seeSite">
-				<a class = "seeSiteAnchor" href="weathersmart/weathersmartPage.html" target = "_blank">View Site</a>
-			</button>
+			
+			<a class = "seeSite" href="weathersmart/weathersmartPage.html" target = "_blank">
+				View Site
+			</a>			
 
 		</div>
 
 		<div class="clear">
-			<i id="fourthDown" class="fa fa-arrow-circle-down"></i>
+			<i id="fourthDown" class="white fa fa-arrow-circle-down"></i>
 		</div>
 
 	</div>
@@ -184,21 +183,22 @@
 					<li>Includes a <span>contact form</span> which sends data to my email address</li>
 					<li>Embeds maps</li>
 				</ul>
-
-			<button class = "seeSite">
-				<a class = "seeSiteAnchor" href="http://fresnoparenting.mywebcommunity.org" target = "_blank">View Site</a>
-			</button>
+			
+			<a class = "seeSite" href="http://fresnoparenting.mywebcommunity.org" target = "_blank">
+				View Site
+			</a>
+			
 		</div>
-		<div id="socialBox" class="browserBox right rightMargin">
+		<div class="browserBox right rightMargin">
 			<img class="browserHead" src="images/browser-head-parenting.png" alt="browser window head">
 			<div class="screenshot">
-				<img src="images/parenting_screenshot5.png" />			
+				<img src="images/parenting_screenshot5.png" alt="Screenshot of Parenting Network Site" />			
 			</div>
 		</div>
 
 	</div>
-
-	<footer>
+	<div class="clear"></div>
+	<footer class="white">
 
 		<p>Background painting: "Sierra Nevada Mountains" (Public Domain)</p>
 		<br>
@@ -206,7 +206,6 @@
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/typed.js"></script>
 </body>
