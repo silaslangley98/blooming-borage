@@ -351,8 +351,8 @@
             <tr id="plantRows" ng-repeat="item in items">
 
               <td ng-bind="item.name"></td>
-              <td>
-                <input type="input" ng-model="item.quantity">
+              <td ng-bind="item.quantity">
+                  /*<input type="text" ng-model="item.quantity">*/
               </td>
               <td>{{item.price | currency}}</td>
               <td>{{item.price * item.quantity | currency}}</td>

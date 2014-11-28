@@ -34,6 +34,14 @@ footer {
 	padding: 1%;
 }
 
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	font-weight: bold;
+}
+
 /** Social Icons **/
 
 .socialIcons {
@@ -408,9 +416,6 @@ footer {
   border-bottom: 1px solid #20559a;
   border-left: 1px solid #2e69a3;
   border-radius: 16px;
-  -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
-  -moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
-  box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
   color: #fff;
   font: normal 1.4em "lucida grande", sans-serif;
   line-height: 1.1;

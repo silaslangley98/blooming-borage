@@ -1,0 +1,210 @@
+/* reset */
+
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*SASSy variables */
+
+$columns: 12;
+$max-page-width: 1200;
+$column-width: $max-page-width/$columns;
+$column-padding: 1%;
+
+/* SASSy mixins */
+
+	/* for column widths and padding */
+
+	@mixin column($size, $padding: $column-padding) {
+		width: percentage(($column-width * $size) / $max-page-width);
+		padding: $padding;
+	}
+
+	/* for adjustments based on the size of the browser window */
+
+	@mixin adjust($windowSize) {
+		@media only screen and (max-width: $windowSize) { @content; }
+	}
+
+	/* for gradients */
+
+	@mixin linear-gradient($fromColor, $toColor) {
+	  background-color: $fromColor; /* Fallback Color */
+	  background: -webkit-linear-gradient(left, $fromColor, $toColor); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(right, $fromColor, $toColor); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(right, $fromColor, $toColor); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(to right, $fromColor, $toColor); /* Standard syntax */
+	}
+
+/* SASSy directives */
+
+	/* for header font-sizes */
+	@each $header, $size in (h1: 3em, h2: 2em, h3: 1.5em) {
+	  #{$header} {
+	    font-size: $size;
+	    @include adjust(1170px) {
+			font-size: $size - .25em;
+	    }
+	  }
+	}
+
+	/* for the styling of the paintings */
+	@each $artist in vanGogh, renoir, david, raphael {
+	  .#{$artist} {
+	    background-image: url('../images/#{$artist}Painting.jpg');
+		max-width: 100%;
+		min-height: 400px;
+	    background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		float: right;
+		margin: 14px auto 0;
+		@include column(7);
+		@include adjust(1050px) {
+			@include column(6);
+		}
+		@include adjust(845px) {
+			@include column(7);
+		}
+		@include adjust(700px) {
+			clear: right;
+			min-height: 540px;
+			@include column(12);
+		}
+		@include adjust(640px) {
+			clear: right;
+			min-height: 475px;
+		}
+		@include adjust(530px) {
+			min-height: 400px;
+		}	
+		@include adjust(460px) {
+			min-height: 350px;
+		}
+		@include adjust(360px) {
+			min-height: 260px;
+		}
+		
+	  }
+	}
+
+/* main tags */
+
+body {
+	font-family: Verdana, helvetica, sans-serif;
+}
+
+header {
+	height: 100px;
+	border: 1px solid #000;
+	padding: 1%;
+	@include linear-gradient(#B6AEDE, #94A9D4);
+	@include adjust(1170px) {
+		height: 80px;
+	}
+}
+
+h1{
+	padding-left: 1%;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+article {
+	@include column(8);
+	border: 1px solid #000;
+	float: left;
+	height: 100%;
+	background-color: #C7DDF3;
+	@include adjust(1170px) {
+		@include column(9);
+	}
+	@include adjust(1050px) {
+		clear: left;
+		height: auto;
+		@include column(12);
+	}
+
+	.about {
+		float: left;
+		@include column(5);
+		text-align: justify;
+		@include adjust(700px) {
+			clear: left;
+			@include column(12);
+		}
+	}
+
+}
+
+aside {
+	@include column(4);
+	float: right;
+	border: 1px solid #000;
+	text-align: justify;
+	height: 100%;
+	background-color: #94A9D4;
+	@include adjust(1170px) {
+		@include column(3);
+		.toBeCut {
+			display: none;
+		}
+	}
+	@include adjust(1050px) {
+		clear: right;
+		height: auto;
+		.toBeCut {
+			display: block;
+		}
+		@include column(12);
+	}
+
+}
+
+li {
+	list-style: none;
+	padding: 5px 0;
+}
+
+footer {
+	@include linear-gradient(#B6AEDE, #94A9D4);
+	font-weight: bold;
+	border: 1px solid #000;
+	height: 80px;
+	p {
+		padding: 0 1% 1%;
+	}
+	@include adjust(470px) {
+		font-size: .9em;
+    }
+}
+
+/* IDs */
+
+#container {
+	height: 1950px;
+}
+
+/* Classes */
+
+.layout {
+	width: 90%;
+	margin: 0 auto;
+	@include adjust(1050px) {
+		width: 100%;
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}

@@ -20,10 +20,12 @@
                 	
                     item.quantity = 1;
                     items[item.guid] = item;
-                    
-                }else {
+                    console.log(items);
+                  
+                } else {
                     items[item.guid].quantity += 1;
-                   
+                    console.log(items[item.guid].quantity);
+                    console.log(items[item.guid].family);
                 }
 			},
  

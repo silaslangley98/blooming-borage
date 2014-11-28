@@ -87,7 +87,7 @@ $(function() {
 			$("#infoBox").css("borderTop", "none");	
 			$(this).hide();
 			$("#infoBox > br").remove();			
-			var name_title = "<div><p>Silas Langley<span class = 'responsiveSocials'><a href='https://github.com/silaslangley98/blooming-borage' target='_blank'><i class='fa fa-github'></i></a><a href='#'><i class='fa fa-linkedin-square'></i></a></span></p><p>Web Developer</p><p><span class='italics'>HTML5, CSS3, Javascript (including jQuery and AngularJS)</span></p></div>";
+			var name_title = "<div><p>Silas Langley<span class = 'responsiveSocials'><a href='https://github.com/silaslangley98/blooming-borage' target='_blank'><i class='fa fa-github'></i></a><a href='#'><i class='fa fa-linkedin-square'></i></a></span></p><p>Web Developer</p><p><span class='italics'>HTML5, CSS3/SASS, Javascript (including jQuery and AngularJS)</span></p></div>";
 			$(name_title).hide().appendTo("#infoBox").fadeIn(4000);
 		});
 
