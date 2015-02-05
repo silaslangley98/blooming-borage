@@ -14,6 +14,10 @@ $columns: 12;
 $max-page-width: 1200;
 $column-width: $max-page-width/$columns;
 $column-padding: 1%;
+$base-color: #006666;
+$lighter-base: lighten($base-color, 10%);
+$greyed: lighten(grayscale($base-color), 70%);
+$reddened: complement($base-color);
 
 /* SASSy mixins */
 
@@ -96,13 +100,15 @@ $column-padding: 1%;
 
 body {
 	font-family: Verdana, helvetica, sans-serif;
+	color: #fff;
 }
 
 header {
 	height: 100px;
 	border: 1px solid #000;
 	padding: 1%;
-	@include linear-gradient(#B6AEDE, #94A9D4);
+	@include linear-gradient($base-color, $lighter-base);
+	/*(#B6AEDE, #94A9D4);*/
 	@include adjust(1170px) {
 		height: 80px;
 	}
@@ -121,7 +127,9 @@ article {
 	border: 1px solid #000;
 	float: left;
 	height: 100%;
-	background-color: #C7DDF3;
+	color: #000;
+	background-color: $greyed;
+	/*#C7DDF3;*/
 	@include adjust(1170px) {
 		@include column(9);
 	}
@@ -149,7 +157,8 @@ aside {
 	border: 1px solid #000;
 	text-align: justify;
 	height: 100%;
-	background-color: #94A9D4;
+	background-color: $reddened;
+	/*#94A9D4;*/
 	@include adjust(1170px) {
 		@include column(3);
 		.toBeCut {
@@ -173,7 +182,8 @@ li {
 }
 
 footer {
-	@include linear-gradient(#B6AEDE, #94A9D4);
+	@include linear-gradient($base-color, $lighter-base);
+	/*(#B6AEDE, #94A9D4);*/
 	font-weight: bold;
 	border: 1px solid #000;
 	height: 80px;
@@ -188,7 +198,7 @@ footer {
 /* IDs */
 
 #container {
-	height: 1950px;
+	height: 1900px;
 }
 
 /* Classes */
